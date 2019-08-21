@@ -8,6 +8,9 @@ from comet_ml import Experiment
 from tensorflow.examples.tutorials.mnist import input_data
 import tensorflow as tf
 
+experiment = Experiment(api_key="p3hc1o1dxODzyHq4NBIwQvmxW",
+                        project_name="test-tensorflow", workspace="manjotpahwa")
+
 def get_data():
     mnist = input_data.read_data_sets("/tmp/tensorflow/mnist/input_data/", one_hot=True)
     return mnist
